@@ -7,6 +7,23 @@
     "title": "[Kai Exo] Product is approved",
     "views": null,
     "extras": null,
+    "some_deep_object": {
+        "array": [
+            {
+                "title":"Google & Facebook ADS",
+                "h1":"ทำโฆษณา Facebook Ads และ Google Ads (Adwords, SEM, GDN)",
+                "description":"รับทำโฆษณา Facebook Ads / Google Ads เริ่มต้น $price | Fastwork.co",
+                "id": "8be0e7d3-0eb5-4ded-b7b6-f132fdaa54f4"
+            },
+            {
+                "title":"[Kai Exo] Product is approved",
+                "h1":"ทำการตลาดและโฆษณา",
+                "description":"สิ่งที่ลูกค้าจะได้รับ สิ่งที่ลูกค้าจะได้รับ แพ็กเกจที่ 1",
+                "id": "6b10c3d4-966d-4d40-b386-b98a70a7ab99"
+            }
+        ]
+
+    },
     "images": [
         {
             "id": "6b39460a-acfd-4c9e-a70b-c7d14669c539",

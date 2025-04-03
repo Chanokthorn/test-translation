@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"os"
+	"reflect"
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
@@ -20,12 +21,26 @@ func CollectTranslationItemsJson(root any) ([]TranslationItem, error) {
 	return CollectTranslationItem(root, nil, nil, ""), nil
 }
 
+func filterByKeyword(target string) bool {
+	for _, keyword := range []string{"title", "h1", "description"} {
+		if target == keyword {
+			return true
+		}
+	}
+	return false
+}
+
 func CollectTranslationItem(value any, container any, key any, path string) []TranslationItem {
 	translationItems := []TranslationItem{}
 
 	switch typedValue := value.(type) {
 	// base case
 	case string:
+		if keyString, ok := key.(string); ok {
+			if !filterByKeyword(keyString) {
+				return translationItems
+			}
+		}
 		translationItems = append(translationItems, TranslationItem{
 			Container: container,
 			Key:       key,
@@ -45,6 +60,11 @@ func CollectTranslationItem(value any, container any, key any, path string) []Tr
 	case []any:
 		for i, v := range typedValue {
 			newPath := fmt.Sprintf("%s[%d]", path, i)
+			if reflect.TypeOf(v).Kind() != reflect.Map {
+				if !filterByKeyword(key.(string)) {
+					return translationItems
+				}
+			}
 			translationItems = append(
 				translationItems,
 				CollectTranslationItem(v, typedValue, i, newPath)...,
@@ -55,6 +75,15 @@ func CollectTranslationItem(value any, container any, key any, path string) []Tr
 	}
 
 	return translationItems
+}
+
+func writeMapToFile(m any, filename string) error {
+	data, err := json.MarshalIndent(m, "", "  ")
+	if err != nil {
+		return err
+	}
+
+	return os.WriteFile(filename, data, 0644)
 }
 
 func Test_object(t *testing.T) {
@@ -68,6 +97,8 @@ func Test_object(t *testing.T) {
 		if err := json.Unmarshal(data, &root); err != nil {
 			t.Fatalf("failed to unmarshal JSON: %v", err)
 		}
+
+		writeMapToFile(root, "before.json")
 
 		TranslationItems, err := CollectTranslationItemsJson(root)
 		if err != nil {
@@ -99,5 +130,6 @@ func Test_object(t *testing.T) {
 
 		// print translated data
 		spew.Dump(root)
+		writeMapToFile(root, "after.json")
 	})
 }
