@@ -21,7 +21,7 @@ func main() {
 	cache := translation.NewCache(rd)
 	aiClient := translation.NewAIClient()
 	translateService := translation.NewTranslateService(cache, aiClient)
-	collector := translation.NewCollector([]string{"title", "h1", "slug"})
+	collector := translation.NewCollector([]string{"title", "h1", "category_id", "listing_seo"})
 	processor := translation.NewProcessor(collector, translateService)
 
 	handler := &Handler{

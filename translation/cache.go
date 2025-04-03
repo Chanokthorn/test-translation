@@ -22,8 +22,12 @@ func NewCache(client *redis.Client) Cache {
 	}
 }
 
+func getKey(key string) string {
+	return fmt.Sprintf("translation:%s", key)
+}
+
 func (c *cache) Get(ctx context.Context, key string) (any, bool, error) {
-	val, err := c.client.Get(ctx, key).Result()
+	val, err := c.client.Get(ctx, getKey(key)).Result()
 	if err != nil {
 		if err == redis.Nil {
 			return nil, false, nil // Key does not exist
@@ -35,7 +39,7 @@ func (c *cache) Get(ctx context.Context, key string) (any, bool, error) {
 }
 
 func (c *cache) Set(ctx context.Context, key string, value any) error {
-	err := c.client.Set(ctx, key, value, 0).Err()
+	err := c.client.Set(ctx, getKey(key), value, 0).Err()
 	if err != nil {
 		return fmt.Errorf("failed to set value in cache: %w", err)
 	}
