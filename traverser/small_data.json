@@ -1,0 +1,130 @@
+{
+    "id": "d4cedc5e-9787-4602-8f03-e3d9bac11154",
+    "bio": null,
+    "show": true,
+    "slug": "paid-ads-97704147",
+    "tags": [],
+    "title": "[Kai Exo] Product is approved",
+    "views": null,
+    "extras": null,
+    "images": [
+        {
+            "id": "6b39460a-acfd-4c9e-a70b-c7d14669c539",
+            "type": null,
+            "source": null,
+            "video_id": null,
+            "product_id": "d4cedc5e-9787-4602-8f03-e3d9bac11154",
+            "sort_order": 0,
+            "is_cover_photo": true
+        },
+        {
+            "id": "838ecf60-9b80-43bc-8a02-1c4f786e3b92",
+            "type": null,
+            "source": null,
+            "video_id": null,
+            "product_id": "d4cedc5e-9787-4602-8f03-e3d9bac11154",
+            "sort_order": 1,
+            "is_cover_photo": false
+        }
+    ],
+    "status": 4,
+    "hide_at": null,
+    "socials": [],
+    "user_id": "501af740-e408-4c1e-b7f8-86b448bbd2db",
+    "ban_days": 0,
+    "category": {
+        "h1": "ทำการตลาดและโฆษณา",
+        "id": "6b10c3d4-966d-4d40-b386-b98a70a7ab99",
+        "icon": "line chart",
+        "slug": "marketing-advertising"
+    },
+    "featured": null,
+    "fw_score": null,
+    "packages": [
+        {
+            "id": "3e1204dc-de3b-4264-8fcb-d47f3612d191",
+            "show": null,
+            "price": 501,
+            "title": "แพ็กเกจที่ 1",
+            "revenue": null,
+            "price_max": null,
+            "product_id": "d4cedc5e-9787-4602-8f03-e3d9bac11154",
+            "sort_order": 1,
+            "description": "สิ่งที่ลูกค้าจะได้รับ สิ่งที่ลูกค้าจะได้รับ แพ็กเกจที่ 1",
+            "delivery_time": 1,
+            "is_new_onboard": false,
+            "attribute_values": [],
+            "system_attributes": [],
+            "product_attribute_value_ids": null
+        }
+    ],
+    "purchase": 3,
+    "websites": [],
+    "banned_at": null,
+    "base_price": 501,
+    "created_at": null,
+    "updated_at": null,
+    "work_steps": [
+        {
+            "id": "427da08f-c729-42a9-943c-f0218e363849",
+            "product_id": "d4cedc5e-9787-4602-8f03-e3d9bac11154",
+            "sort_order": 1,
+            "description": "ขั้นตอนที่ 1"
+        },
+        {
+            "id": "0c63ced2-4deb-4d88-946b-eca62e14a4bf",
+            "product_id": "d4cedc5e-9787-4602-8f03-e3d9bac11154",
+            "sort_order": 2,
+            "description": "ขั้นตอนที่ 2"
+        }
+    ],
+    "category_id": "6b10c3d4-966d-4d40-b386-b98a70a7ab99",
+    "subcategory": {
+        "h1": "ทำโฆษณา Facebook Ads และ Google Ads (Adwords, SEM, GDN)",
+        "id": "8be0e7d3-0eb5-4ded-b7b6-f132fdaa54f4",
+        "hot": false,
+        "icon": "https://storage.googleapis.com/fastwork-static/a39f311c-0487-4101-ae5c-f1bf430c7a5a.jpg",
+        "slug": "paid-ads",
+        "image": "https://storage.googleapis.com/fastwork-static/3f053d73-711b-4dec-94a8-cc79e2c00043.jpg",
+        "title": "Google & Facebook ADS",
+        "active": true,
+        "is_new": false,
+        "subtitle": null,
+        "title_seo": "รับทำโฆษณา Facebook Ads / Google Ads เริ่มต้น $price | Fastwork.co",
+        "allow_fast": true,
+        "avg_rating": 4.5,
+        "has_social": false,
+        "sort_order": 10,
+        "category_id": "6b10c3d4-966d-4d40-b386-b98a70a7ab99",
+        "listing_seo": [
+            "โฆษณา Facebook",
+            "โฆษณา google"
+        ],
+        "minimum_price": 350,
+        "reviews_count": 1257,
+        "sitemap_anchor": null,
+        "allow_new_product": true,
+        "has_alternate_locale": null,
+        "subcategory_group_icon_name": null
+    },
+    "about_seller": null,
+    "auto_message": "",
+    "algolia_status": 1,
+    "base_price_max": null,
+    "is_new_onboard": false,
+    "subcategory_id": "8be0e7d3-0eb5-4ded-b7b6-f132fdaa54f4",
+    "is_instant_hire": false,
+    "revision_policy": null,
+    "attribute_values": [],
+    "last_approved_at": "2020-04-13T02:55:50.875Z",
+    "ready_to_work_at": null,
+    "extra_description": "",
+    "has_seller_coupon": false,
+    "show_phone_number": true,
+    "base_delivery_time": 0,
+    "enable_translation": null,
+    "enable_auto_message": false,
+    "price_before_discount": null,
+    "base_price_description": null,
+    "enable_auto_message_offline": false
+}
