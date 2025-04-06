@@ -28,8 +28,8 @@ func NewCollector(whiteList []string) Collector {
 	}
 }
 
-func filterByKeyword(target string, list []string) bool {
-	for _, keyword := range list {
+func filterByKeyword(target string) bool {
+	for _, keyword := range []string{"title", "h1", "description"} {
 		if target == keyword {
 			return true
 		}
@@ -47,11 +47,6 @@ func (c *collector) CollectTranslationItem(value any, container any, key any, pa
 	switch typedValue := value.(type) {
 	// base case
 	case string:
-		if keyString, ok := key.(string); ok {
-			if !filterByKeyword(keyString, c.whiteList) {
-				return translationItems
-			}
-		}
 		translationItems = append(translationItems, TranslationItem{
 			Container: container,
 			Key:       key,
@@ -72,7 +67,7 @@ func (c *collector) CollectTranslationItem(value any, container any, key any, pa
 		for i, v := range typedValue {
 			newPath := fmt.Sprintf("%s[%d]", path, i)
 			if reflect.TypeOf(v).Kind() != reflect.Map {
-				if !filterByKeyword(key.(string), c.whiteList) {
+				if !filterByKeyword(key.(string)) {
 					return translationItems
 				}
 			}

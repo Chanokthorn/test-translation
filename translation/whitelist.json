@@ -1,0 +1,21 @@
+{
+    "category": {
+        "h1": true
+    },
+    "packages": {
+        "title": true,
+        "description": true
+    },
+    "work_steps": {
+        "description": true
+    },
+    "subcategory": {
+        "h1": true,
+        "title": true,
+        "title_seo": true
+    },
+    "random_words": true,
+    "random_arrays": {
+        "deep_attribute": true
+    }
+}

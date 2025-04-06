@@ -21,14 +21,16 @@ func main() {
 	cache := translation.NewCache(rd)
 	aiClient := translation.NewAIClient()
 	translateService := translation.NewTranslateService(cache, aiClient)
-	collector := translation.NewCollector([]string{"title", "h1", "category_id", "listing_seo"})
-	processor := translation.NewProcessor(collector, translateService)
+	collector := translation.NewCollector([]string{"title", "subtitle", "h1", "category_id", "listing_seo", "description"})
+	collectorTree := translation.NewCollectorTree()
+	processor := translation.NewProcessor(collector, collectorTree, translateService)
 
 	handler := &Handler{
 		processor: processor,
 	}
 
 	e.POST("/", handler.HandleTranslate)
+	e.POST("/whitelist", handler.HandleTranslateWithWhitelist)
 
 	e.Logger.Fatal(e.Start(":3000"))
 }
@@ -55,4 +57,24 @@ func (h *Handler) HandleTranslate(c echo.Context) error {
 	}
 
 	return c.JSON(http.StatusOK, jsonRes)
+}
+
+type TranslateWithWhitelistRequest struct {
+	Data      any `json:"data"`
+	Whitelist any `json:"whitelist"`
+}
+
+func (h *Handler) HandleTranslateWithWhitelist(c echo.Context) error {
+	var req TranslateWithWhitelistRequest
+	if err := c.Bind(&req); err != nil {
+		return c.JSON(http.StatusBadRequest, map[string]string{"error": "invalid request body"})
+	}
+
+	res, err := h.processor.TranslateWithWhitelist(c.Request().Context(), req.Data, req.Whitelist)
+	if err != nil {
+		log.Errorf("failed to process translation with whitelist: %v", err)
+		return c.JSON(http.StatusInternalServerError, map[string]string{"error": "failed to process translation with whitelist"})
+	}
+
+	return c.JSON(http.StatusOK, res)
 }

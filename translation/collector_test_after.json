@@ -2,7 +2,7 @@
   "about_seller": null,
   "algolia_status": 1,
   "attribute_values": [],
-  "auto_message": "",
+  "auto_message": "translated_",
   "ban_days": 0,
   "banned_at": null,
   "base_delivery_time": 0,
@@ -12,36 +12,36 @@
   "bio": null,
   "category": {
     "h1": "translated_ทำการตลาดและโฆษณา",
-    "icon": "line chart",
-    "id": "6b10c3d4-966d-4d40-b386-b98a70a7ab99",
-    "slug": "marketing-advertising"
+    "icon": "translated_line chart",
+    "id": "translated_6b10c3d4-966d-4d40-b386-b98a70a7ab99",
+    "slug": "translated_marketing-advertising"
   },
-  "category_id": "6b10c3d4-966d-4d40-b386-b98a70a7ab99",
+  "category_id": "translated_6b10c3d4-966d-4d40-b386-b98a70a7ab99",
   "created_at": null,
   "enable_auto_message": false,
   "enable_auto_message_offline": false,
   "enable_translation": null,
-  "extra_description": "",
+  "extra_description": "translated_",
   "extras": null,
   "featured": null,
   "fw_score": null,
   "has_seller_coupon": false,
   "hide_at": null,
-  "id": "d4cedc5e-9787-4602-8f03-e3d9bac11154",
+  "id": "translated_d4cedc5e-9787-4602-8f03-e3d9bac11154",
   "images": [
     {
-      "id": "6b39460a-acfd-4c9e-a70b-c7d14669c539",
+      "id": "translated_6b39460a-acfd-4c9e-a70b-c7d14669c539",
       "is_cover_photo": true,
-      "product_id": "d4cedc5e-9787-4602-8f03-e3d9bac11154",
+      "product_id": "translated_d4cedc5e-9787-4602-8f03-e3d9bac11154",
       "sort_order": 0,
       "source": null,
       "type": null,
       "video_id": null
     },
     {
-      "id": "838ecf60-9b80-43bc-8a02-1c4f786e3b92",
+      "id": "translated_838ecf60-9b80-43bc-8a02-1c4f786e3b92",
       "is_cover_photo": false,
-      "product_id": "d4cedc5e-9787-4602-8f03-e3d9bac11154",
+      "product_id": "translated_d4cedc5e-9787-4602-8f03-e3d9bac11154",
       "sort_order": 1,
       "source": null,
       "type": null,
@@ -50,18 +50,18 @@
   ],
   "is_instant_hire": false,
   "is_new_onboard": false,
-  "last_approved_at": "2020-04-13T02:55:50.875Z",
+  "last_approved_at": "translated_2020-04-13T02:55:50.875Z",
   "packages": [
     {
       "attribute_values": [],
       "delivery_time": 1,
       "description": "translated_สิ่งที่ลูกค้าจะได้รับ สิ่งที่ลูกค้าจะได้รับ แพ็กเกจที่ 1",
-      "id": "3e1204dc-de3b-4264-8fcb-d47f3612d191",
+      "id": "translated_3e1204dc-de3b-4264-8fcb-d47f3612d191",
       "is_new_onboard": false,
       "price": 501,
       "price_max": null,
       "product_attribute_value_ids": null,
-      "product_id": "d4cedc5e-9787-4602-8f03-e3d9bac11154",
+      "product_id": "translated_d4cedc5e-9787-4602-8f03-e3d9bac11154",
       "revenue": null,
       "show": null,
       "sort_order": 1,
@@ -75,20 +75,20 @@
   "revision_policy": null,
   "show": true,
   "show_phone_number": true,
-  "slug": "paid-ads-97704147",
+  "slug": "translated_paid-ads-97704147",
   "socials": [],
   "some_deep_object": {
     "array": [
       {
         "description": "translated_รับทำโฆษณา Facebook Ads / Google Ads เริ่มต้น $price | Fastwork.co",
         "h1": "translated_ทำโฆษณา Facebook Ads และ Google Ads (Adwords, SEM, GDN)",
-        "id": "8be0e7d3-0eb5-4ded-b7b6-f132fdaa54f4",
+        "id": "translated_8be0e7d3-0eb5-4ded-b7b6-f132fdaa54f4",
         "title": "translated_Google \u0026 Facebook ADS"
       },
       {
         "description": "translated_สิ่งที่ลูกค้าจะได้รับ สิ่งที่ลูกค้าจะได้รับ แพ็กเกจที่ 1",
         "h1": "translated_ทำการตลาดและโฆษณา",
-        "id": "6b10c3d4-966d-4d40-b386-b98a70a7ab99",
+        "id": "translated_6b10c3d4-966d-4d40-b386-b98a70a7ab99",
         "title": "translated_[Kai Exo] Product is approved"
       }
     ]
@@ -99,14 +99,14 @@
     "allow_fast": true,
     "allow_new_product": true,
     "avg_rating": 4.5,
-    "category_id": "6b10c3d4-966d-4d40-b386-b98a70a7ab99",
+    "category_id": "translated_6b10c3d4-966d-4d40-b386-b98a70a7ab99",
     "h1": "translated_ทำโฆษณา Facebook Ads และ Google Ads (Adwords, SEM, GDN)",
     "has_alternate_locale": null,
     "has_social": false,
     "hot": false,
-    "icon": "https://storage.googleapis.com/fastwork-static/a39f311c-0487-4101-ae5c-f1bf430c7a5a.jpg",
-    "id": "8be0e7d3-0eb5-4ded-b7b6-f132fdaa54f4",
-    "image": "https://storage.googleapis.com/fastwork-static/3f053d73-711b-4dec-94a8-cc79e2c00043.jpg",
+    "icon": "translated_https://storage.googleapis.com/fastwork-static/a39f311c-0487-4101-ae5c-f1bf430c7a5a.jpg",
+    "id": "translated_8be0e7d3-0eb5-4ded-b7b6-f132fdaa54f4",
+    "image": "translated_https://storage.googleapis.com/fastwork-static/3f053d73-711b-4dec-94a8-cc79e2c00043.jpg",
     "is_new": false,
     "listing_seo": [
       "โฆษณา Facebook",
@@ -115,31 +115,31 @@
     "minimum_price": 350,
     "reviews_count": 1257,
     "sitemap_anchor": null,
-    "slug": "paid-ads",
+    "slug": "translated_paid-ads",
     "sort_order": 10,
     "subcategory_group_icon_name": null,
     "subtitle": null,
     "title": "translated_Google \u0026 Facebook ADS",
-    "title_seo": "รับทำโฆษณา Facebook Ads / Google Ads เริ่มต้น $price | Fastwork.co"
+    "title_seo": "translated_รับทำโฆษณา Facebook Ads / Google Ads เริ่มต้น $price | Fastwork.co"
   },
-  "subcategory_id": "8be0e7d3-0eb5-4ded-b7b6-f132fdaa54f4",
+  "subcategory_id": "translated_8be0e7d3-0eb5-4ded-b7b6-f132fdaa54f4",
   "tags": [],
   "title": "translated_[Kai Exo] Product is approved",
   "updated_at": null,
-  "user_id": "501af740-e408-4c1e-b7f8-86b448bbd2db",
+  "user_id": "translated_501af740-e408-4c1e-b7f8-86b448bbd2db",
   "views": null,
   "websites": [],
   "work_steps": [
     {
       "description": "translated_ขั้นตอนที่ 1",
-      "id": "427da08f-c729-42a9-943c-f0218e363849",
-      "product_id": "d4cedc5e-9787-4602-8f03-e3d9bac11154",
+      "id": "translated_427da08f-c729-42a9-943c-f0218e363849",
+      "product_id": "translated_d4cedc5e-9787-4602-8f03-e3d9bac11154",
       "sort_order": 1
     },
     {
       "description": "translated_ขั้นตอนที่ 2",
-      "id": "0c63ced2-4deb-4d88-946b-eca62e14a4bf",
-      "product_id": "d4cedc5e-9787-4602-8f03-e3d9bac11154",
+      "id": "translated_0c63ced2-4deb-4d88-946b-eca62e14a4bf",
+      "product_id": "translated_d4cedc5e-9787-4602-8f03-e3d9bac11154",
       "sort_order": 2
     }
   ]

@@ -7,6 +7,29 @@
     "title": "[Kai Exo] Product is approved",
     "views": null,
     "extras": null,
+    "random_words": [
+        "ทำการตลาด",
+        "โฆษณา",
+        "Facebook",
+        "Google"
+    ],
+    "random_arrays": [
+        [
+            "deep_ทำการตลาด",
+            "deep_โฆษณา",
+            "deep_Facebook",
+            "deep_Google"
+        ],
+        [
+            "deep_ทำการตลาด",
+            "deep_โฆษณา",
+            "deep_Facebook",
+            "deep_Google"
+        ],
+        {
+            "deep_attribute": "attribute บางอย่าง"
+        }
+    ],
     "some_deep_object": {
         "array": [
             {
