@@ -28,7 +28,7 @@ func (a *aiClient) Translate(ctx context.Context, data TranslatePayloadItem) (Tr
 
 	// Simulate translation
 	data.Text = "Translated: " + data.Text
-	time.Sleep(0 * time.Millisecond) // Simulate network delay
+	time.Sleep(100 * time.Millisecond) // Simulate network delay
 
 	return data, nil
 }
