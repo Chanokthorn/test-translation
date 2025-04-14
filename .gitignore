@@ -1,3 +1,6 @@
 # VSCode debug configurations
 .vscode/
 __debug*
+# Python
+venv/
+*/venv/

@@ -71,6 +71,29 @@
   ],
   "price_before_discount": null,
   "purchase": 3,
+  "random_arrays": [
+    [
+      "deep_ทำการตลาด",
+      "deep_โฆษณา",
+      "deep_Facebook",
+      "deep_Google"
+    ],
+    [
+      "deep_ทำการตลาด",
+      "deep_โฆษณา",
+      "deep_Facebook",
+      "deep_Google"
+    ],
+    {
+      "deep_attribute": "attribute บางอย่าง"
+    }
+  ],
+  "random_words": [
+    "ทำการตลาด",
+    "โฆษณา",
+    "Facebook",
+    "Google"
+  ],
   "ready_to_work_at": null,
   "revision_policy": null,
   "show": true,
