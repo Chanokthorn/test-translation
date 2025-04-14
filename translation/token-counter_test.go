@@ -2,6 +2,9 @@ package translation
 
 import (
 	"testing"
+
+	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
 )
 
 func Test_tokenCounter_CountTokens(t *testing.T) {
@@ -22,5 +25,9 @@ func Test_tokenCounter_CountTokens(t *testing.T) {
 		if tokens != expectedTokens {
 			t.Fatalf("Expected %d tokens, got %d", expectedTokens, tokens)
 		}
+
+		accCount, err := tokenCounter.GetAccCount()
+		require.NoError(t, err)
+		assert.Equal(t, expectedTokens, accCount)
 	})
 }

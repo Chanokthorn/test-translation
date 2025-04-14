@@ -52,6 +52,10 @@ func (tc *tokenCounter) CountTokens(ctx context.Context, texts []string) (int, e
 		totalTokens += tokenCount
 	}
 
+	tc.mu.Lock()
+	defer tc.mu.Unlock()
+	tc.accCount += totalTokens
+
 	return totalTokens, nil
 }
 
