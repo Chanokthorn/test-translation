@@ -9,12 +9,15 @@ import (
 )
 
 type TranslateService interface {
+	AttachTokenCounter(tokenCounter TokenCounter)
 	Translate(ctx context.Context, payload []TranslatePayloadItem) ([]TranslatePayloadItem, error)
 }
 
 type translateService struct {
 	cache    Cache
 	aiClient AIClient
+	isCounting bool
+	tokenCounter TokenCounter
 }
 
 func NewTranslateService(cache Cache, aiClient AIClient) TranslateService {
@@ -24,10 +27,16 @@ func NewTranslateService(cache Cache, aiClient AIClient) TranslateService {
 	}
 }
 
+
 func hash(s string) string {
 	h := fnv.New64()
 	h.Write([]byte(s))
 	return base64.StdEncoding.EncodeToString(h.Sum(nil))
+}
+
+func (t *translateService) AttachTokenCounter(tokenCounter TokenCounter) {
+	t.isCounting = true
+	t.tokenCounter = tokenCounter
 }
 
 func (t *translateService) Translate(ctx context.Context, payloads []TranslatePayloadItem) ([]TranslatePayloadItem, error) {

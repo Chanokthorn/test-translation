@@ -5,14 +5,19 @@ import (
 	"encoding/json"
 	"fmt"
 	"os/exec"
+	"sync"
 )
 
 type TokenCounter interface {
 	CountTokens(ctx context.Context, texts []string) (int, error)
+	GetAccCount() (int, error)
+	ResetAccCount() error
 }
 
 type tokenCounter struct {
 	tokenizerPath string
+	accCount      int
+	mu            sync.Mutex
 }
 
 func NewTokenCounter(tokenizerPath string) TokenCounter {
@@ -48,4 +53,19 @@ func (tc *tokenCounter) CountTokens(ctx context.Context, texts []string) (int, e
 	}
 
 	return totalTokens, nil
+}
+
+func (tc *tokenCounter) GetAccCount() (int, error) {
+	tc.mu.Lock()
+	defer tc.mu.Unlock()
+
+	return tc.accCount, nil
+}
+
+func (tc *tokenCounter) ResetAccCount() error {
+	tc.mu.Lock()
+	defer tc.mu.Unlock()
+
+	tc.accCount = 0
+	return nil
 }
